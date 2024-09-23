@@ -75,7 +75,7 @@ export default function FlightSearch() {
               </p>
             </CardContent>
             <CardFooter>
-              <Button className="w-full" onClick={() => router.push("/book?id="+index)}>Book Now</Button>
+              <Button className="w-full" onClick={() => router.push("/book?id="+flight.id)}>Book Now</Button>
             </CardFooter>
           </Card>
         ))}
