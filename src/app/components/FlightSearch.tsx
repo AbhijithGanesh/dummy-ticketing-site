@@ -31,7 +31,7 @@ export default function FlightSearch() {
     <section className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Flight Search</h1>
       <section className="flex flex-col md:flex-row gap-4 mb-8">
-        <Select onValueChange={setFrom}>
+        <Select id="from" onValueChange={setFrom}>
           <SelectTrigger className="w-full md:w-[200px]">
             <SelectValue placeholder="From" />
           </SelectTrigger>
@@ -41,7 +41,7 @@ export default function FlightSearch() {
             ))}
           </SelectContent>
         </Select>
-        <Select onValueChange={setTo}>
+        <Select id="to" onValueChange={setTo}>
           <SelectTrigger className="w-full md:w-[200px]">
             <SelectValue placeholder="To" />
           </SelectTrigger>
