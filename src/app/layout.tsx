@@ -5,7 +5,7 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Abhijith Ganesh - Dummy Flight Booking Application",
+  title: "Dummy Flight Booking Application",
   description: "A dummy flight booking app created by Abhijith Ganesh",
 };
 
