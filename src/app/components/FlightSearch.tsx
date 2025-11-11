@@ -21,9 +21,8 @@ import { useState } from "react";
 import { flightData } from "./data";
 
 // @ts-ignore
-const cities = [
-  ...new Set(flightData.flatMap((flight) => [flight.From, flight.To])),
-].sort();
+const cities = [...Array.from(new Set(flightData.flatMap(f => [f.From, f.To])))].sort();
+
 
 export default function FlightSearch() {
   const [from, setFrom] = useState("");
